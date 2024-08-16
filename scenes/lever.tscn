@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbincj3jvlkvx"]
+[gd_scene load_steps=6 format=3 uid="uid://bbincj3jvlkvx"]
 
 [ext_resource type="Texture2D" uid="uid://c7c303q12sj2l" path="res://assets/sprites/lever.png" id="1_3k0le"]
+[ext_resource type="Script" path="res://scripts/lever.cs" id="1_l7p0a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gseeg"]
 atlas = ExtResource("1_3k0le")
@@ -22,6 +23,7 @@ size = Vector2(26, 20)
 
 [node name="lever" type="Area2D"]
 collision_mask = 2
+script = ExtResource("1_l7p0a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dyckw")

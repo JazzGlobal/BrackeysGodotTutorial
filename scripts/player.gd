@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+# TODO: Convert this to C#. 
+# TODO: Add local variable for IInteractable component.
+#       If the IInteractable component is not null and the player presses the interact key
+#       call IInteractable.OnInteract.
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
