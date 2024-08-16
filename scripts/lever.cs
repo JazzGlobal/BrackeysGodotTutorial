@@ -9,8 +9,8 @@ public partial class lever : Area2D, IInteractable
 	public override void _Ready()
 	{
 		animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-        Connect("body_entered", new Callable(this, nameof(OnBodyEntered)));
-        Connect("body_exited", new Callable(this, nameof(OnBodyExited)));
+		Connect("body_entered", new Callable(this, nameof(OnBodyEntered)));
+		Connect("body_exited", new Callable(this, nameof(OnBodyExited)));
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
