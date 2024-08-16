@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://btal2yvojwo5r"]
+[gd_scene load_steps=8 format=3 uid="uid://btal2yvojwo5r"]
 
-[ext_resource type="Script" path="res://scripts/treasure_block.gd" id="1_6ck8m"]
+[ext_resource type="Script" path="res://scripts/TreasureBlock.cs" id="1_bh810"]
 [ext_resource type="Texture2D" uid="uid://br7ctchf2t7hc" path="res://assets/sprites/world_tileset.png" id="1_ujpef"]
-[ext_resource type="PackedScene" uid="uid://bgslu5wn6ymqh" path="res://scenes/coin.tscn" id="2_htpju"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rubel"]
 atlas = ExtResource("1_ujpef")
@@ -39,8 +38,7 @@ size = Vector2(16, 1)
 
 [node name="TreasureBlock" type="StaticBody2D"]
 collision_mask = 2
-script = ExtResource("1_6ck8m")
-treasure = ExtResource("2_htpju")
+script = ExtResource("1_bh810")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kdce7")
