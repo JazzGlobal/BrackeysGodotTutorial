@@ -37,7 +37,7 @@ public partial class TreasureBlock : StaticBody2D, IInteractable
 	{
 		if (active)
 		{
-			animatedSprite2D.Play("unsused");
+			animatedSprite2D.Play("unused");
 			var inst = treasure.Instantiate() as Node2D;
 			inst.Transform = Transform;
 			if (inst.Name == "coin")

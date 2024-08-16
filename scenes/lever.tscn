@@ -21,9 +21,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_148x6"]
 size = Vector2(26, 20)
 
-[node name="lever" type="Area2D"]
+[node name="lever" type="Area2D" node_paths=PackedStringArray("Interactables")]
 collision_mask = 2
 script = ExtResource("1_l7p0a")
+Interactables = []
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dyckw")
