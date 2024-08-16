@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dhi4c2rhir5nr"]
+[gd_scene load_steps=16 format=3 uid="uid://dhi4c2rhir5nr"]
 
 [ext_resource type="PackedScene" uid="uid://dxtgrndyxn26m" path="res://scenes/player.tscn" id="1_pls3e"]
 [ext_resource type="Texture2D" uid="uid://br7ctchf2t7hc" path="res://assets/sprites/world_tileset.png" id="2_2hco0"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cf280j4furphc" path="res://scenes/slime.tscn" id="6_ppk5c"]
 [ext_resource type="FontFile" uid="uid://b7jkmb87oilob" path="res://assets/fonts/PixelOperator8.ttf" id="7_dwwvy"]
 [ext_resource type="PackedScene" uid="uid://btal2yvojwo5r" path="res://scenes/treasure_block.tscn" id="8_3kfa4"]
+[ext_resource type="PackedScene" uid="uid://bbincj3jvlkvx" path="res://scenes/lever.tscn" id="9_8rouj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14n01"]
 texture = ExtResource("2_2hco0")
@@ -484,3 +485,6 @@ position = Vector2(102, -41)
 
 [node name="TreasureBlock5" parent="." instance=ExtResource("8_3kfa4")]
 position = Vector2(133.75, -41)
+
+[node name="lever" parent="." instance=ExtResource("9_8rouj")]
+position = Vector2(-72, 200)
